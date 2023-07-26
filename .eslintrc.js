@@ -6,6 +6,7 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
+    'plugin:vue/recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
     'plugin:prettier/recommended'
@@ -26,7 +27,8 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'prettier'],
+  parser: 'vue-eslint-parser',
+  plugins: ['@typescript-eslint', 'prettier', 'vue'],
   rules: {
     'prettier/prettier': 'error',
     'no-extra-semi': 'off',
@@ -40,5 +42,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-empty-interface': 'off'
-  }
+  },
+  ignorePatterns: ['!.*', 'dist', 'node_modules']
 }
