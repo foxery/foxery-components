@@ -1,10 +1,10 @@
-export * from './src/button'
-import type { App } from 'vue'
-import Button from './src/button.vue'
+export * from './src/button';
+import type { App } from 'vue';
+import FButton from './src/button.vue';
 
-Button.install = (app: App) => {
-  app.component(Button.name, Button)
-}
+FButton.install = (app: App) => {
+  app.component(FButton.name, FButton);
+};
 
-export { Button }
-export default Button
+export { FButton };
+export default FButton;

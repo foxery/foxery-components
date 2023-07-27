@@ -6,6 +6,6 @@
 
 <script lang="ts" setup>
 defineOptions({
-  name: 'FoxeryButton'
-})
+  name: 'FButton',
+});
 </script>

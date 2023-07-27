@@ -1,19 +1,14 @@
 module.exports = {
   parser: ['@typescript-eslint/parser', 'vue-eslint-parser'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier', 'plugin:prettier/recommended'],
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   plugins: ['@typescript-eslint', 'prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     'prettier/prettier': 'error',
@@ -27,6 +22,6 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
-    '@typescript-eslint/no-empty-interface': 'off'
-  }
-}
+    '@typescript-eslint/no-empty-interface': 'off',
+  },
+};

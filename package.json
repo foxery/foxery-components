@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "demo": "pnpm dev --filter ./demo",
     "prettier": "prettier --write .",
     "lint": "eslint --ext .ts packages/*/**.ts",
     "lint:fix": "eslint --ext .ts packages/*/**.ts --fix"
